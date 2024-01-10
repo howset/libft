@@ -1,13 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsetyamu <hsetyamu@student.42berlin.de>    +#+  +:+       +#+        */
+/*   By: hsetyamu <hsetyamu@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/11 14:48:24 by hsetyamu          #+#    #+#             */
-/*   Updated: 2023/12/14 13:57:05 by hsetyamu         ###   ########.fr       */
+/*   Created: 2024/01/08 18:06:51 by hsetyamu          #+#    #+#             */
+/*   Updated: 2024/01/08 18:07:01 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+#include "libft.h"
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
+
+/*
+int main(void) {
+    
+	ft_putchar_fd('H', 0); // STDIN
+	ft_putchar_fd('H', 1); // STDOUT
+	ft_putchar_fd('H', 2); // STDERR
+
+	return 0;
+}
+*/

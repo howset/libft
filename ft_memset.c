@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsetya <hsetya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hsetya <hsetyamu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 13:32:30 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/07 19:06:09 by hsetya           ###   ########.fr       */
+/*   Updated: 2024/01/07 19:06:09 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,14 @@ void	*ft_memset(void *s, int c, size_t n)
 }
 
 /*
-returns an integer less than, equal to, or greater  than  
-zero  if  the first n bytes of s1 is found, 
-respectively, to be less than, to match, or be greater than the
-first n bytes of s2
+memset() function fills the first n bytes of the memory area pointed to 
+by s with the constant byte c
 */
 
 /*
 #include <stdio.h> //puts, printf
-#include <string.h> //memset
+#include <string.h> //memchr,memcmp,memcpy,memmove,memset
+					//strchr,strcpy,strlen
 
 int	main (void) {
 	char str[] = "This is a ft_memset test.";

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsetya <hsetya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hsetya <hsetyamu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 15:18:10 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/07 19:04:47 by hsetya           ###   ########.fr       */
+/*   Updated: 2024/01/07 19:04:47 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,8 @@ of s2
 
 /*
 #include <stdio.h>
-#include <string.h>
+#include <string.h> //memchr,memcmp,memcpy,memmove,memset
+					//strchr,strcpy,strlen
 
 int main(void)
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsetya <hsetya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hsetya <hsetyamu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 16:34:42 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/07 19:04:19 by hsetya           ###   ########.fr       */
+/*   Updated: 2024/01/07 19:04:19 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ the length of the total string they tried to create.
 
 /*
 #include <stdio.h>
-#include <bsd/string.h>
+#include <bsd/string.h> //strlcat,strlcpy,strnstr
 
 int	main(void)
 {

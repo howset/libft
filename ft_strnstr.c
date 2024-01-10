@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsetya <hsetya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hsetya <hsetyamu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 15:38:29 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/07 16:32:12 by hsetya           ###   ########.fr       */
+/*   Updated: 2024/01/07 16:32:12 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ in the string big, where not more than len characters are searched
 
 /*
 #include <stdio.h>
-#include <bsd/string.h>
+#include <bsd/string.h> //strlcat,strlcpy,strnstr
 
 int	main(void)
 {

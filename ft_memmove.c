@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsetya <hsetya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hsetya <hsetyamu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:04:29 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/07 18:59:55 by hsetya           ###   ########.fr       */
+/*   Updated: 2024/01/03 18:59:55 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,34 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*pdest;
-	unsigned char	*psrc;
+	char	*pdest;
+	char	*psrc;
 
-	pdest = dest;
-	psrc = (unsigned char *) src;
+	if (!dest && !src)
+		return (dest);
+	if (dest < src)
+		dest = ft_memcpy(dest, src, n);
+	else
+	{
+		pdest = (char *)dest;
+		psrc = (char *)src;
+		while (n > 0)
+		{
+			n--;
+			pdest[n] = psrc[n];
+		}
+	}
+	return (dest);
+}
+
+/*
+void	*ft_memmove(void *dest, const void *src, size_t n)
+{
+	char	*pdest;
+	char	*psrc;
+
+	pdest = (char *) dest;
+	psrc = (char *) src;
 	if (dest < src)
 		return (ft_memcpy(dest, src, n));
 	else
@@ -31,16 +54,21 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+!! Failed warmachine
+!! Failed libftunittest
+*/
 
 /*
-returns an integer less than, equal to, or greater  than  zero  if  the
-first n bytes of s1 is found, respectively, to be less than, to match,
-or be greater than the first n bytes of s2
+memmove()  function  copies n bytes from memory area src to memory area dest.
+The memory areas may overlap: copying takes place as though the bytes in src
+are first copied into a temporary  array that does not overlap src or dest,
+and the bytes are then copied from the temporary array to dest.
 */
 
 /*
 #include <stdio.h> //puts, printf
-#include <string.h> //memmove
+#include <string.h> //memchr,memcmp,memcpy,memmove,memset
+					//strchr,strcpy,strlen
 
 int	main(void)
 {

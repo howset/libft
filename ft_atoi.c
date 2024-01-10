@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsetya <hsetya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hsetya <hsetyamu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 16:02:00 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/07 19:01:04 by hsetya           ###   ########.fr       */
+/*   Updated: 2024/01/08 14:53:03 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,15 @@ int	ft_atoi(const char *nptr)
 	i = 0;
 	res = 0;
 	sign = 1;
-	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
+	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
 		i++;
 	if (nptr[i] == '-')
 	{
 		sign = -1;
 		i++;
 	}
+	else if (nptr[i] == '+')
+		i++;
 	while ((nptr[i] >= '0' && nptr[i] <= '9'))
 	{
 		res = res * 10 + nptr[i] - '0';
@@ -48,9 +50,9 @@ string pointed to by nptr to int.
 
 int main() 
 {
-    const char *str1 = "  12345";
-    const char *str2 = "-6789";
-    const char *str3 = "42 is the answer";
+    const char *str1 = "--54";
+    const char *str2 = "+789";
+    const char *str3 = "++47";
 
     int num1 = atoi(str1);
     int num2 = atoi(str2);

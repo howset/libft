@@ -25,7 +25,8 @@ size_t	ft_strlen(const char *str)
 }
 
 /*
-#include "string.h"
+#include <string.h> //memchr,memcmp,memcpy,memmove,memset
+					//strchr,strcpy,strlen
 #include "stdio.h"
 int	main(void)
 {

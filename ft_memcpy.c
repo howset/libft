@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsetya <hsetya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hsetya <hsetyamu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 16:40:54 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/07 19:05:55 by hsetya           ###   ########.fr       */
+/*   Updated: 2024/01/03 15:00:33 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char	*pdest;
-	unsigned char	*psrc;
+	char	*pdest;
+	char	*psrc;
 
-	pdest = (unsigned char *) dest;
-	psrc = (unsigned char *) src;
+	pdest = (char *) dest;
+	psrc = (char *) src;
+	if (!dest && !src)
+		return (dest);
 	while (n > 0)
 	{
 		*pdest = *psrc;
@@ -30,15 +32,14 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 }
 
 /*
-returns an integer less than, equal to, or greater  than  zero  
-if the first n bytes of s1 is found, respectively, 
-to be less than, to match, or be greater than the first 
-n bytes of s2
+memcpy() function copies n bytes from memory area src to memory area dest.
+The memory areas must not overlap. Use memmove if the memory areas overlap.
 */
 
 /*
 #include <stdio.h>
-#include <string.h>
+#include <string.h> //memchr,memcmp,memcpy,memmove,memset
+					//strchr,strcpy,strlen
 
 int	main(void)
 {

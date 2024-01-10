@@ -3,54 +3,54 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsetya <hsetya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hsetya <hsetyamu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 14:44:32 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/07 19:03:00 by hsetya           ###   ########.fr       */
+/*   Updated: 2024/01/07 19:03:00 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdint.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*res;
-	size_t	total;
 
-	total = nmemb * size;
-	if ((nmemb == 0) || (size == 0) || total > SIZE_MAX)
-		return (NULL);
-	res = malloc(sizeof(size_t) * total);
+	if (nmemb == 0 || size == 0)
+	{
+		nmemb = 1;
+		size = 1;
+	}
+	res = malloc(nmemb * size);
 	if (res == NULL)
 		return (NULL);
-	ft_bzero(res, total);
+	ft_bzero(res, nmemb * size);
 	return (res);
 }
 
 /*
 The calloc() function allocates memory for an array of nmemb 
 elements of size bytes each  and returns  a  pointer to the 
-allocated memory.  The memory is set to zero.  If nmemb or size is
-0, then calloc() returns a unique pointer value that can  later 
-be  successfully  passed  to free().
-If  the  multiplication of nmemb and size would result in integer 
-overflow, then calloc() returns an error.
+allocated memory.  The memory is set to zero.
+
+# setting nmemb and size to 1 may have other solutions like this:
+if (nmemb && size && nmemb > (UINT_MAX / size))
+		return (NULL);
+//UINT_MAX in #include <limits.h>
 */
 
 /*
 #include <stdio.h>
 int main() 
 {
-	int *ex;
+	int *res;
 	int size = 5; //0 to fail
 
-	ex = (int *)ft_calloc(6,(size * sizeof(int))); //nmemb 0 to fail
-	if (ex == NULL) printf("ft_calloc failed.\n");
+	res = (int *)ft_calloc(0,(size * sizeof(int))); //nmemb 0 to fail
+	if (res == NULL) printf("ft_calloc failed.\n");
 	else printf("ft_calloc success.\n");
 
-	//free
-	free(ex);
+	free(res);
 	return 0;
 }
 */
