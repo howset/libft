@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsetya <hsetyamu@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hsetyamu <hsetyamu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 16:51:51 by hsetyamu          #+#    #+#             */
 /*   Updated: 2024/01/07 16:14:58 by hsetyamu         ###   ########.fr       */

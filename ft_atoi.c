@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsetya <hsetyamu@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hsetyamu <hsetyamu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 16:02:00 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/08 14:53:03 by hsetyamu         ###   ########.fr       */
+/*   Updated: 2024/01/11 12:47:07 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ string pointed to by nptr to int.
 
 /*
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> //atoi
 
 int main() 
 {

@@ -6,7 +6,7 @@
 /*   By: hsetyamu <hsetyamu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 18:02:53 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/10 15:12:51 by hsetyamu         ###   ########.fr       */
+/*   Updated: 2024/01/11 12:51:58 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (res);
 }
+
+/*
+Allocates (with malloc(3)) and returns a copy of
+’s1’ with the characters specified in ’set’ removed
+from the beginning and the end of the string.
+*/
 
 /*
 #include <stdio.h>

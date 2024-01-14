@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsetyamu <hsetyamu@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: hsetyamu <hsetyamu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 18:04:09 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/08 18:04:13 by hsetyamu         ###   ########.fr       */
+/*   Updated: 2024/01/11 12:52:47 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,13 @@ char	**ft_split(char const *s, char c)
 	array = realsplit(s, c, array, wordcount);
 	return (array);
 }
+
+/*
+Allocates (with malloc(3)) and returns an array
+of strings obtained by splitting ’s’ using the
+character ’c’ as a delimiter. The array must end
+with a NULL pointer.
+*/
 /*
 #include <stdio.h>
 

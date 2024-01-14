@@ -6,7 +6,7 @@
 /*   By: hsetyamu <hsetyamu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 17:59:17 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/10 15:13:57 by hsetyamu         ###   ########.fr       */
+/*   Updated: 2024/01/11 12:51:17 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (res);
 }
 */
+
+/*
+Allocates (with malloc(3)) and returns a substring
+from the string ’s’.
+The substring begins at index ’start’ and is of
+maximum size ’len’.
+*/
+
 /*
 #include <stdio.h>
 

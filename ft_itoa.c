@@ -6,7 +6,7 @@
 /*   By: hsetyamu <hsetyamu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 18:04:30 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/10 15:14:00 by hsetyamu         ###   ########.fr       */
+/*   Updated: 2024/01/11 12:53:08 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,11 @@ char	*ft_itoa(int n)
 	return (res);
 }
 
+/*
+Allocates (with malloc(3)) and returns a string
+representing the integer received as an argument.
+Negative numbers must be handled.
+*/
 /*
 #include <stdio.h>
 int main(void) {
