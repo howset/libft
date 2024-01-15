@@ -48,7 +48,7 @@ NAME = libft.a
 
 # -------------------------------------------------------------------#
 # Variables. -I Include Path - Directories containing headers files. 
-CFLAGS = -Wall -Werror -Wextra -I./
+CFLAGS = -Wall -Werror -Wextra -I.
 
 # -------------------------------------------------------------------#
 # Variables. Define CC 
@@ -71,9 +71,10 @@ CC = cc
 # exist, s write an index into the archive for faster searches 
 # (if the library contains many object files).
 
-$(NAME):
-	$(CC) $(CFLAGS) -c $(SRC)
+$(NAME):	$(OBJ)
 	ar rcs $(NAME) $(OBJ)
+$(OBJ):	$(SRC)
+	$(CC) $(CFLAGS) -c $(SRC)
 
 # ---------
 # Alternative. No explicit mention of compiling the sources. Compilation

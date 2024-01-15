@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsetyamu <hsetyamu@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: hsetyamu <hsetyamu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 16:11:32 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/08 12:38:22 by hsetyamu         ###   ########.fr       */
+/*   Updated: 2024/01/15 13:56:03 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h> /*malloc free size_t atoi*/
 # include <unistd.h> /*write NULL*/
+# include <stdint.h> /*SIZE_MAX in ft_calloc*/
 
 int			ft_isalpha(int i);
 int			ft_isdigit(int i);

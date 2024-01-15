@@ -6,7 +6,7 @@
 /*   By: hsetyamu <hsetyamu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 14:44:32 by hsetyamu          #+#    #+#             */
-/*   Updated: 2024/01/07 19:03:00 by hsetyamu         ###   ########.fr       */
+/*   Updated: 2024/01/15 13:57:37 by hsetyamu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*res;
 
-	if (nmemb == 0 || size == 0)
+	if (size > 0 && nmemb > SIZE_MAX / size)
 		return (NULL);
 	res = malloc(nmemb * size);
 	if (res == NULL)
